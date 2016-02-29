@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  	<body>
+
+  		<script src="JavaScriptCheatsheet.js"></script>
+
+  		 <!-- You can also write JS in your html, like:
+
+  		<script>alert("hello!");</script>-->
+
+  		 <!-- Example of JS Functionality - adding numbers -->
+
+  		Number 1: <input type="text" id="num1">
+		Number 2: <input type="text" id="num2">
+		<button id="add" onclick="addNums()">Click to add</button>
+			<br>
+			Result:
+		<span id="result">Result Here</span>
+
+		 <!-- Example of JS functionality - changing text on click // -->
+
+		<div onclick="change()" id="el">CHANGE ME</div>
+
+		<script> 
+
+		// If you look inside console, you'll see the results are 15, here is one way to do the basic math
+
+		var num1 = 5;
+      	var num2 = 10;
+
+      	var result = num1 + num2;
+      	console.log(result);
+
+      	// Here is another way to do the basic math
+
+      	var num1 = 5;
+      	var num2 = 10;
+
+      	console.log(num1 + num2);
+
+      	// See output in console
+
+      	var string1 = "The cat ";
+      	var string2 = "is fat.";
+
+      	var result = string1 + string2;
+		console.log(result);
+
+		// Object that holds info about me to print in console
+
+		var amelia = {
+        firstName: "Amelia",
+        lastName: "Tran",
+        birthday: "June 11",
+        interests: ["eating", "sleeping"]
+      	};
+
+      	console.log(amelia.birthday);
+      	console.log(amelia.interests[0]);
+
+      	// Testing
+
+      	var num = 12;
+
+      	if (num < 10) {
+        console.log("your number, " + num + ", is less than 10");
+      	} else {
+        console.log("your number, " + num + ", is greater or equal to 10");
+      	} 
+
+      	// If you want to run another test before getting to else, you'll want to use else if
+
+			// if(5>10){
+       			// console.log("You'll never see this because 5 is not greater than 10");
+			// } else if(5===5){
+				// console.log("Yes, 5 really is equal to 5, so this will show up in the console")
+			// } else {
+ 				// console.log("We won't get here because our else if evaluates to true");
+ 		    // } 
+
+ 		// Declare a function that takes a name as an argument and tells the user what name they've entered, try invoking it after it has been declared
+
+ 		    function sayHi(name) {
+        	return alert("hi " + name);
+      		}
+      	//
+
+
+      		sayHi("amelia");
+      		sayHi("jill");
+
+      	//  Declare a function that takes no arguments but prints something to the console, try invoking it after it has been declared
+
+      		function saySomething() {
+        	return console.log("banana apple pear");
+      		}
+
+      		saySomething();
+      		saySomething();
+      		saySomething();
+
+      	// Declare a function that, depending upon which virtual "door" was entered, tells the user they've received a different "prize" in an alert. Try running it after it has been declared a few times with each door option
+
+      		function openDoor(doorNumber) {
+        	if (doorNumber === 1) {
+          		return console.log("you win a banana");
+        	} else if (doorNumber === 2) {
+          		return console.log("you win a lion");
+        	} else if (doorNumber === 3) {
+          		return console.log("you win a glass of water");
+        	} else {
+          		return console.log("you lost! try again");
+        		}
+      		}
+
+      		openDoor(1);
+      		openDoor(2);
+      		openDoor(3);
+      		openDoor(4);
+      		openDoor(5);
+
+      	</script>
+
+ 	</body>
+ </html>
+
+
+
